@@ -5,7 +5,7 @@
 このMODは自分で使いたかったり思い付いたりしたもので作れたものがごったまぜになったものです    
 別プロジェクトの[cdda-modding-helper](https://github.com/YueKaburagi/cdda-modding-helper)で
 変換して使います  
-変換済みのものは Release をに置いておきます    
+変換済みのものは Release に置いておきます    
 
 ##contents
 
