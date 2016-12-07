@@ -1,0 +1,10 @@
+*~
+\#*#
+
+/__config.json
+/*.sh
+*.jar
+*.txt
+
+/others
+/stats-through-skills

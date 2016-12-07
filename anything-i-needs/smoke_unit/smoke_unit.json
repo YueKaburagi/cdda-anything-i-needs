@@ -1,0 +1,143 @@
+[{
+    "__templates":["smoke_unit"],
+    "id": "yk_smoke_unit",
+    "__name_en": "folded smoking unit",
+    "__name_ja": "折り畳まれた燻製箱",
+    "__description_ja": "折り畳まれた使い捨ての燻製箱です。",
+    "price": 30,
+    "weight": 248,
+    "volume": 1,
+},{
+    "__templates": ["smoke_unit"],
+    "id": "yk_smoke_unit_smoking",
+    "__name_en": "fired smoking unit(meat)",
+    "__name_ja": "火のついた燻製箱(肉)",
+    "__description_ja": "肉を仕掛けた使い捨ての燻製箱です。中身を燻している最中です。",
+    "price": 130,
+    "weight": 1186,
+    "use_action": {
+	"type": "delayed_transform",
+	"transform_age": 6000,
+	"not_ready_msg": "まだ煙が出ています！",
+	"msg": "燻製箱を壊して燻製肉を取り出しました。",
+	"moves": 150,
+	"target": "meat_smoked",
+	"target_charges": 3
+    }
+},{
+    "__templates": ["smoke_unit"],
+    "id": "yk_smoke_unit_smoking_human",
+    "__name_en": "fired smoking unit(human flesh)",
+    "__name_ja": "火のついた燻製箱(人肉)",
+    "__description_ja": "人肉を仕掛けた使い捨ての燻製箱です。中身を燻している最中です。",
+    "price": 130,
+    "weight": 1186,
+    "use_action": {
+	"type": "delayed_transform",
+	"transform_age": 6000,
+	"not_ready_msg": "まだ煙が出ています！",
+	"msg": "燻製箱を壊して燻製人肉を取り出しました。",
+	"moves": 150,
+	"target": "human_smoked",
+	"target_charges": 3
+    }
+},{
+    "__templates": ["smoke_unit"],
+    "id": "yk_smoke_unit_smoking_fish",
+    "__name_en": "fired smoking unit(fish)",
+    "__name_ja": "火のついた燻製箱(魚)"
+    "__description_ja": "魚を仕掛けた使い捨ての燻製箱です。中身を燻している最中です。",
+    "price": 130,
+    "weight": 1186,
+    "use_action": {
+	"type": "delayed_transform",
+	"transform_age": 6000,
+	"not_ready_msg": "まだ煙が出ています！",
+	"msg": "燻製箱を壊して燻製魚を取り出しました。",
+	"moves": 150,
+	"target": "fish_smoked",
+	"target_charges": 6
+    }
+},
+
+
+
+
+
+{
+    "//": " ######################################## recipes ########################################",
+    "__templates": ["recipe_tool"],
+    "result": "yk_smoke_unit",
+
+    "skills_required": [["cooking", 1] ],
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 6000,
+    "qualities":[
+	{"id":"CUT","level":1,"amount":1}
+    ],
+    "components": [
+	[["box_small", 3] ],
+	[["string_36", 1], ["duct_tape", 10], ["rag", 2], ["leather", 2] ]
+    ]
+},{
+    "__templates": ["recipe_meat"],
+    "result": "yk_smoke_unit_smoking",
+
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 3000,
+    "qualities": [
+	{"id":"COOK","level":1,"amount":1}
+    ],
+    "tools": [
+	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
+    ],
+    "components": [
+	[["yk_smoke_unit", 1] ],
+	[["charcoal", 15] ],
+	[["meat", 3] ],
+	[["splinter", 3], ["skewer_bone", 3] ]
+    ]
+},{
+    "__templates": ["recipe_meat"],
+    "result": "yk_smoke_unit_smoking_human",
+
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 3000,
+    "qualities": [
+	{"id":"COOK","level":1,"amount":1}
+    ],
+    "tools": [
+	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
+    ],
+    "components": [
+	[["yk_smoke_unit", 1] ],
+	[["charcoal", 15] ],
+	[["human_flesh", 3] ],
+	[["splinter", 3], ["skewer_bone", 3] ]
+    ]
+},{
+    "type" : "recipe",
+    "result": "yk_smoke_unit_smoking_fish",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 3000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+	{"id":"COOK","level":1,"amount":1}
+    ],
+    "tools": [
+	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
+    ],
+    "components": [
+	[["yk_smoke_unit", 1] ],
+	[["charcoal", 15] ],
+	[["fish", 6] ],
+	[["splinter", 3], ["skewer_bone", 3] ],
+    ]
+}]

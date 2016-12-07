@@ -1,0 +1,8 @@
+{
+    "__templates": ["modinfo"],
+    "ident": "yk_sandwich",
+    "__name_en": "Sandwiches",
+    "__name_ja": "追加 - サンドイッチ",
+    "__description_en": "Add few variations of sandwich.",
+    "__description_ja": "サンドイッチのバリエーションを追加します",
+}

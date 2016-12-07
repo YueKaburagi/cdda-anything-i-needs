@@ -1,0 +1,166 @@
+{
+    "scenario": {
+	"name": "__name",
+	"description": "__description",
+	"type": "scenario",
+	"start_name": "anyware",
+	"allowed_locs": [
+    	    "shelter","house","pawn","bank","mil_surplus","furniture","cabin","lmoe",
+	    "lab_stairs", "lab_finale", "ice_lab_stairs", "ice_lab_finale",
+	    "mall_a_12", "mall_a_30", "police", "school",
+	    "mine_finale"
+	],
+    },
+
+
+    "armor_tentacula": {
+	"type" : "ARMOR",
+	"flags" : ["VARSIZE", "SKINTIGHT", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS"],
+	"symbol" : "[",
+	"color" : "dark_gray",
+    },
+    "material_cotton": {
+	"material" : ["cotton"],
+	"warmth" : 6,
+	"material_thickness" : 1
+    },
+    "material_wool": {
+	"material" : ["wool"],
+	"warmth" : 24,
+	"material_thickness" : 2
+    },
+    "material_fur": {
+	"material": ["fur"],
+	"warmth" : 58,
+	"material_thickness" : 3
+    },
+    "envguarder": {
+	"material" : ["nomex", "plastic", "leather"],
+	"warmth" : 6,
+	"environmental_protection": 6,
+	"material_thickness" : 2,
+	"flags": ["STURDY","WATERPROOF"]	
+    },
+    "legginth_socks": {
+	"covers" : ["FEET", "LEGS"],
+    },
+    "nagatekko": {
+	"covers" : ["HANDS", "ARMS"],
+    },
+    "recipe_legginth_socks": {
+	"__templates":["recipe_armor"],
+	"subcategory": "CSC_ARMOR_LEGS",
+	"skill_used": "tailor",
+	"reversible": false,
+	"autolearn": true
+    },
+    "recipe_nagatekko": {
+	"__templates":["recipe_armor"],
+	"subcategory": "CSC_ARMOR_HANDS",
+	"skill_used": "tailor",
+	"reversible": false,
+	"autolearn": true
+    },
+
+
+    "recipe": {
+	"type": "recipe",
+	"reversible": false,
+	"autolearn": true,
+    },
+    "recipe_tool": {
+	"__templates":["recipe"],
+	"category": "CC_OTHER",
+	"subcategory": "CSC_OTHER_TOOLS",
+    },
+    "recipe_food": {
+	"__templates":["recipe"],
+	"category": "CC_FOOD",
+    }
+    "recipe_food_other": {
+	"__templates":["recipe_food"],
+	"subcategory": "CSC_FOOD_OTHER",
+    },
+    "recipe_meat": {
+	"__templates":["recipe_food"]
+	"subcategory": "CSC_FOOD_MEAT",
+    },
+
+    "recipe_armor": {
+	"type":"recipe",
+	"category":"CC_ARMOR",
+    },
+
+
+    "item": {
+	"name": "__name",
+	"description": "__description",
+    },
+    "item_food": {
+	"__templates": ["item"],
+	"type": "COMESTIBLE",
+	"comestible_type": "FOOD",
+	"symbol": "%",
+    },
+    "item_drink" {
+	"__templates": ["item_food"],
+	"comestible_type": "DRINK",
+	"symbol": "~",
+	"phase": "liquid",
+    },
+    "ramen": {
+	"__templates": ["item_drink"],
+	"container": "can_food",
+	"spoils_in": 80,
+	"material": ["wheat"],
+	"flags" : ["EATEN_HOT", "USE_EAT_VERB"],
+    },
+
+    "sandwich": {
+	"__templates": ["item_food"],
+	"container": "wrapper",
+	"color": "brown",
+    },
+    "recipe_sandwich": {
+	"__templates": ["recipe_food"],
+	"subcategory": "CSC_FOOD_BREAD",
+	"skill_used": "cooking",
+	"difficulty": 0,
+    },
+
+    
+    "smoke_unit": {
+	"__templates": ["item"],
+	"type": "GENERIC",
+	"symbol": ":",
+	"color": "brown",
+	"volume": 4,
+	"material": ["paper"],
+	"components": [
+	],
+    },
+
+    "note": {
+	"type": "snippet",
+	"category": "note"
+    },
+
+
+
+
+
+
+
+
+
+
+
+    "modinfo": {
+	"type": "MOD_INFO",
+	"authors": [ "Yue Kaburagi" ],
+	"dependencies": [ "dda" ],
+	"name": "__name",
+	"description": "__description",
+	"category": "items",
+    },
+}

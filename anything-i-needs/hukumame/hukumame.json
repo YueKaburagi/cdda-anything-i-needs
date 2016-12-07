@@ -1,0 +1,39 @@
+
+[{
+    "__templates": ["item_food"],
+    "id" : "yk_handful_dry_beans",
+    "__name_en" : "handful of dry beans",
+    "__name_ja": "福豆",
+    "weight" : 54,
+    "to_hit": 0,
+    "bashing": 23,
+    "color" : "light_gray",
+    "spoils_in" : 0,
+    "container" : "bag_plastic",
+    "symbol" : ",",
+    "quench" : -1,
+    "healthy" : 1,
+    "addiction_potential" : 0,
+    "nutrition" : 1,
+    "__description_ja" : "節分の時に投げる豆です。鬼役の人に向かって投げましょう。",
+    "price" : 0,
+    "material" : "veggy",
+    "volume" : 1,
+    "charges" : 20,
+    "fun" : -1
+},{
+  "type" : "recipe",
+  "result": "yk_handful_dry_beans",
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_OTHER",
+  "skill_used": "cooking",
+  "difficulty": 0,
+  "time": 500,
+  "reversible": false,
+  "autolearn": true,
+  "components": [
+    [
+      [ "dry_beans", 1 ]
+    ]
+  ]
+}]

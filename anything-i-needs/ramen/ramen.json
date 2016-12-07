@@ -1,0 +1,149 @@
+[{
+    "__templates":["item_food"],
+    "id" : "yk_ramen_raw",
+    "__name_en" : "raw ramen noodle",
+    "__name_ja": "生麺(中華麺)",
+    "weight" : 453,
+    "color" : "yellow",
+    "spoils_in" : 145,
+    "container" : "bag_plastic",
+    "quench" : 0,
+    "healthy" : -2,
+    "nutrition" : 12,
+    "__description_ja" : "自家製の中華麺です。鹹水として苛性ソーダを利用しているので健康には良くなさそうです。",
+    "price" : 100,
+    "material" : "wheat",
+    "tool" : "null",
+    "volume" : 2,
+    "charges" : 1,
+    "fun" : -8
+},{
+    "type" : "recipe",
+    "result": "yk_ramen_raw",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_PASTA",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 50000,
+    "batch_time_factors": [88, 2],
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+	{"id":"CUT","level":1,"amount":1}
+    ], "//":"↑マチェットあたりが切断2になってたらそれに合わせたい。現状切断は1だけみたいなので1設定",
+    "tools": [
+	[["stick", -1], ["q_staff", -1] ]
+    ],
+    "components": [
+	[["flour", 4] ],
+	[["lye_powder", 2] ],
+	[["water", 1], ["water_clean", 1] ]
+    ]
+},
+
+
+
+
+{ 
+    "//": "##################################### # ramen recipes # #####################################",
+    "__templates": ["ramen"],
+    "id" : "yk_ramen",
+    "__name_en" : "ramen",
+    "__name_ja": "ラーメン",
+    "weight" : 336,
+    "color" : "light_gray",
+    "quench" : 3,
+    "healthy" : 0,
+    "nutrition" : 31,
+    "__description_ja" : "スープと麺だけの質素なラーメンです。",
+    "price" : 120,
+    "volume" : 1,
+    "charges" : 2,
+    "fun" : 1
+},{
+    "type" : "recipe",
+    "result": "yk_ramen",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_PASTA",
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": 10000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities":[
+	{"id":"COOK","level":2,"amount":1},
+	{"id":"BOIL","level":1,"amount":1}
+    ], "tools": [
+	[
+	    [ "hotplate", 4 ],
+	    [ "char_smoker", 1 ],
+	    [ "toolset", 4 ],
+	    [ "fire", -1 ]
+	]
+    ],
+    "components": [
+	[
+	    [ "noodles_fast", 1], ["yk_ramen_raw", 1]
+	],
+	[
+	    [ "salt", 1 ],
+	    [ "soysauce", 1 ],
+	    [ "seasoning_salt", 10 ]
+	],
+	[
+	    [ "broth", 1 ],
+	    [ "broth_bone", 1 ]
+	]
+    ]
+},{
+    "__templates":["ramen"],
+    "id" : "yk_ramen_chashu",
+    "__name_ja" : "チャーシュー麺",
+    "weight" : 352,
+    "color" : "light_gray",
+    "spoils_in" : 80,
+    "quench" : 2,
+    "nutrition" : 26,
+    "healthy" : 0,
+    "__description_ja" : "薄切り燻製肉をトッピングした、手作りのチャーシューメンです。ちゃんとしたチャーシューではないので、味が物足りなく感じます",
+    "price" : 210,
+    "material" : ["flesh"],
+    "volume" : 1,
+    "charges" : 2,
+    "fun" : 2
+},{
+    "type" : "recipe",
+    "result": "yk_ramen_chashu",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_PASTA",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 11000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities":[
+	{"id":"COOK","level":2,"amount":1},
+	{"id":"BOIL","level":1,"amount":1},
+	{"id":"CUT","level":1,"amount":1}
+    ], "tools": [
+	[
+	    [ "hotplate", 4 ],
+	    [ "char_smoker", 1 ],
+	    [ "toolset", 4 ],
+	    [ "fire", -1 ]
+	]
+    ],
+    "components": [
+	[["noodles_fast", 1], ["yk_ramen_raw", 1] ],
+	[["meat_smoked", 1] ],
+	[
+	    [ "salt", 1 ],
+	    [ "soysauce", 1 ],
+	    [ "seasoning_salt", 10 ]
+	],
+	[
+	    [ "broth", 1 ],
+	    [ "broth_bone", 1 ]
+	]
+    ]
+}]

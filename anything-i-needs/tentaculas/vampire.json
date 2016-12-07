@@ -1,0 +1,20 @@
+[{
+    "__templates":["scenario"],
+    "ident": "yk_vampire_fake",
+    "__name_en": "Vampire (fake)",
+    "__name_ja": "吸血鬼(偽)",
+    "points": -3,
+    "__description_ja": "血も飲まなれば、泳げもする、呼ばれてもいない他人の家へだってずかずかと上がり込めるあなたは、吸血鬼とは遠い存在なのですが、光が嫌いでしかも日光に当たると焼ける体質が災いして、吸血鬼扱いを受けるようになってしまいました。夜の明かりが少なくなった今、世界はちょっとだけ住みやすくなりました。",
+    "forced_traits": ["NIGHTVISION3", "SUNBURN", "TROGLO3"]
+},{
+    "__templates":["scenario"],
+    "ident": "yk_vampire_daywalker",
+    "__name_en": "Vampire (daywalker)",
+    "__name_ja": "吸血鬼(デイウォーカー)",
+    "points": 1,
+    "__description_ja": "吸血鬼の中には弱点の殆どを克服してしまった存在がいると言います。太陽の下を歩き、川を渡り、料理に大蒜を入れ、礼儀正しく他人の家には招かれてから上がるあなたは、心臓に杭を打たれると死ぬ程度には人間として生活してきました。あなたの今の心配事は、入手が難しくなった嗜好品の血くらいです。",
+    "items": {
+	"both": ["teleumbrella", "fitover_sunglasses"]
+    },
+    "forced_traits": ["NIGHTVISION3", "ALBINO", "TROGLO"]
+}]

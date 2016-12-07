@@ -1,0 +1,158 @@
+[{
+    "__templates":["item"],
+    "id": "yk_electric_mill",
+    "type": "TOOL",
+    "symbol": ":",
+    "color": "light_gray",
+    "__name_en": "electric mill",
+    "__name_ja": "電動粉挽き機",
+    "__description_ja": "電池で動作する粉挽き機です。機械の使い方さえわかるのなら、石臼を回すより遥かに速く穀粉を作ることができます。",
+    "price": 8900,
+    "material": ["steel"],
+    "weight": 13381,
+    "volume": 40,
+    "bashing": 9,
+    "max_charges": 500,
+    "initial_charges": 250,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "ammo": "battery",
+    "revert_to": "null"
+},{ 
+    "__templates":["recipe_tool"],
+    "result": "yk_electric_mill",
+    "skills_required": [["cooking", 2] ],
+    "skill_used": "mechanics",
+    "difficulty": 5,
+    "time": 45000,
+    "reversible": true,
+    "qualities":[
+	{"id":"HAMMER","level":2,"amount":1},
+	{"id":"SAW_M","level":1,"amount":1}
+    ],
+    "tools": [
+	[ [ "goggles_welding", -1 ] ],
+	[
+	    [ "welder", 50 ],
+	    [ "welder_crude", 75 ],
+	    [ "toolset", 75 ],
+	    [ "oxy_torch", 5]
+	]
+    ],
+    "components": [
+	[ ["scrap", 8], ["steel_chunk", 3] ],
+	[ [ "sheet_metal", 1 ] ],
+	[ [ "motor", 1 ] ]
+    ]
+}
+
+
+
+
+
+{
+    "//": "################################### food recipes ###################################",
+    "__import"[{
+	"ref": {
+	    "type":"recipe",
+	    "result":"flour",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["tools", "batch_time_factors"]
+    }],
+    "time": 5000,
+    "id_suffix": "yk_through_electric_mill",
+    "difficulty": "${obj.difficulty - 1}",
+    "tools": [ [["yk_electric_mill", 50] ]],
+    "skills_required": [["mechanics", 1]],
+},{
+    "__import"[{
+	"ref": {
+	    "type":"recipe",
+	    "result":"oatmeal",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["tools"]
+    }],
+    "time": 5000,
+    "id_suffix": "yk_through_electric_mill",
+    "difficulty": "${obj.difficulty - 1}",
+    "skills_required": [["mechanics", 1]],
+    "tools": [ [[ "hotplate", 5 ], [ "char_smoker", 5 ], [ "toolset", 5 ], [ "fire", -1 ] ],
+	       [["yk_electric_mill", 50 ]] ],
+},{
+    "__import"[{
+	"ref": {
+	    "type":"recipe",
+	    "result":"cornmeal",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["tools", "batch_time_factors"]
+    }],
+    "time": 5000,
+    "id_suffix": "yk_through_electric_mill",
+    "difficulty": "${obj.difficulty - 1}",
+    "skills_required": [["mechanics", 1]],
+    "tools": [ [[ "hotplate", 5 ], [ "char_smoker", 5 ], [ "toolset", 5 ], [ "fire", -1 ] ],
+	       [["yk_electric_mill", 50 ]] ],
+},{
+    "__import"[{
+	"ref": {
+	    "type":"recipe",
+	    "result":"meal_bone",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["tools", "batch_time_factors"]
+    }],
+    "time": 5000,
+    "id_suffix": "yk_through_electric_mill",
+    "difficulty": "${obj.difficulty - 1}",
+    "skills_required": [["mechanics", 1]],
+    "tools": [ [["yk_electric_mill", 50] ]],
+},{
+    "__import"[{
+	"ref": {
+	    "type":"recipe",
+	    "result":"meal_bone_tainted",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["tools", "batch_time_factors"]
+    }],
+    "time": 5000,
+    "id_suffix": "yk_through_electric_mill",
+    "difficulty": "${obj.difficulty - 1}",
+    "skills_required": [["mechanics", 1]],
+    "tools": [ [["yk_electric_mill", 50] ]],
+},
+
+
+
+
+{ "//": "######################################### chitin #########################################",
+    "__import"[{
+	"ref": {
+	    "type":"recipe",
+	    "result":"meal_chitin_piece",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["tools", "batch_time_factors"]
+    }],
+    "time": 5000,
+    "id_suffix": "yk_through_electric_mill",
+    "difficulty": "${obj.difficulty - 1}",
+    "skills_required": [["mechanics", 1]],
+  "tools": [ [["yk_electric_mill", 50] ]], 
+
+}]

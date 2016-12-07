@@ -1,0 +1,216 @@
+[{
+    "__templates":["scenario"],
+    "ident": "yk_tentacle",
+    "__name_en": "Tentacle",
+    "__name_ja": {"male": "触手紳士", "female": "触手少女"},
+     "points": -3,
+    "__description_ja": "あなたは人間で言う肩から先と腰から下の部分が触手になってます。それが誇りなのかコンプレックスなのかは分かりませんが、人間の大多数からの評価は*怪物*であったという記憶があります。つまり……ゾンビの世界では何の心配もありませんね！",
+    "forced_traits": ["ARM_TENTACLES_8", "LEG_TENTACLES"]
+},
+
+
+
+
+{
+    "__templates":["armor_tentacula", "material_cotton", "legginth_socks"],
+    "id" : "yk_tentacle_leggsocks",
+    "name" : "レギンスソックス(触手用)",
+    "weight" : 200,
+    "description" : "レギンスと靴下を繋げて袋状にした、その名もレギンスソックスです。夏場の紫外線からお肌を守ってくれますが、ゾンビや人間からはそこまで守ってくれないでしょう。",
+    "price" : 1300,
+    "volume" : 4,
+    "encumbrance" : 5,
+    "coverage" : 80
+},{
+    "__templates":["armor_tentacula", "material_cotton", "nagatekko"],
+    "id" : "yk_tentacle_nagatekko",
+    "name" : "長手甲(触手用)",
+    "weight" : 300,
+    "description" : "古来から触手が文化にあるというある国の、日射しや砂埃から肌を守るための衣類です。これはその中でも丈が長い、長手甲と呼ばれるものです。",
+    "price" : 700,
+    "volume" : 4,
+    "encumbrance" : 5,
+    "coverage" : 75
+},{
+    "__templates":["armor_tentacula", "material_wool", "legginth_socks"],
+    "id" : "yk_tentacle_leggsocks_wool",
+    "name" : "レギンスソックス(羊毛/触手用)",
+    "weight" : 360,
+    "description" : "フェルト生地を使用したちょっと暖かいレギンスソックスです。少し地厚になったのでゾンビくらいの攻撃なら凌げるかもしれまん。",
+    "price" : 1500,
+    "volume" : 6,
+    "encumbrance" : 16,
+    "coverage" : 90,
+},{
+    "__templates":["armor_tentacula", "material_wool", "nagatekko"],
+    "id" : "yk_tentacle_nagatekko_wool",
+    "name" : "長手甲(羊毛/触手用)",
+    "weight" : 420,
+    "description" : "フェルト生地を使用したちょっと暖かい長手甲です。しっかり身体に合わせて作ったのなら、そこまで動きにくくはならないでしょう。",
+    "price" : 800,
+    "volume" : 6,
+    "encumbrance" : 16,
+    "coverage" : 85,
+},{
+    "__templates":["armor_tentacula", "material_fur", "legginth_socks"],
+    "id" : "yk_tentacle_leggsocks_fur",
+    "name" : "レギンスソックス(毛皮/触手用)",
+    "weight" : 480,
+    "description" : "毛皮を利用したとても暖かいレギンスソックスです。もこもこあったかなのでちょっと動きにくくなります。",
+    "price" : 2000,
+    "volume" : 8,
+    "encumbrance" : 26,
+    "coverage" : 94,
+},{
+    "__templates":["armor_tentacula", "material_fur", "nagatekko"],
+    "id" : "yk_tentacle_nagatekko_fur",
+    "name" : "長手甲(毛皮/触手用)",
+    "weight" : 600,
+    "description" : "毛皮を利用したとても暖かい長手甲です。もふもふぬくぬくなのでちょっと動きにくくなります。",
+    "price" : 1100,
+    "volume" : 8,
+    "encumbrance" : 26,
+    "environmental_protection": 1,
+    "coverage" : 89,
+},{
+    "__templates":["armor_tentacula", "envguarder", "legginth_socks"],
+    "id" : "yk_tentacle_leggsocks_envguarder",
+    "name" : "環境防護型レギンスソックス(触手用)",
+    "weight" : 240,
+    "description" : "他の環境防護服などを参考に作成した、触手用の環境防護型のレギンスソックスです。先端部分を中心に、全体を複合素材で作ったため、重さの割には動きにくいです。",
+    "price" : 35000,
+    "volume" : 7,
+    "encumbrance" : 20,
+    "coverage" : 98,
+},{
+    "__templates":["armor_tentacula", "envguarder", "nagatekko"],
+    "id" : "yk_tentacle_nagatekko_envguarder",
+    "name" : "環境防護型長手甲(触手用)",
+    "weight" : 260,
+    "description" : "他の環境防護服などを参考に作成した、触手用の環境防護型の長手甲です。先端部分を中心に、全体を複合素材で作ったため、重さの割には動きにくいです。",
+    "price" : 38000,
+    "volume" : 7,
+    "encumbrance" : 20,
+    "coverage" : 96,
+},
+
+
+
+
+
+{
+    "result": "yk_tentacle_leggsocks",
+    "__templates":["recipe_legginth_socks"],
+
+    "difficulty": 3,
+    "time": 100000,
+    "tools": [
+	[["sewing_kit", 24] ]
+    ],
+    "components": [
+	[["rag", 34] ]
+    ]
+},{
+    "result": "yk_tentacle_nagatekko",
+    "__templates":["recipe_nagatekko"],
+
+    "difficulty": 3,
+    "time": 120000,
+    "tools": [
+	[["sewing_kit", 28] ]
+    ],
+    "components": [
+	[["rag", 44] ],
+	[["leather", 4] ]
+    ]
+},{
+    "result": "yk_tentacle_leggsocks_wool",
+    "__templates":["recipe_legginth_socks"],
+
+    "difficulty": 4,
+    "time": 100000,
+    "tools": [
+	[["sewing_kit", 24] ]
+    ],
+    "components": [
+	[["felt_patch", 34] ]
+    ]
+},{
+    "result": "yk_tentacle_nagatekko_wool",
+    "__templates":["recipe_nagatekko"],
+
+    "difficulty": 4,
+    "time": 120000,
+    "tools": [
+	[["sewing_kit", 28] ]
+    ],
+    "components": [
+	[["felt_patch", 44] ],
+	[["leather", 4] ]
+    ]
+},{
+    "result": "yk_tentacle_leggsocks_fur",
+    "__templates":["recipe_legginth_socks"],
+
+    "difficulty": 4,
+    "time": 100000,
+    "tools": [
+	[["sewing_kit", 24] ]
+    ],
+    "components": [
+	[["fur", 34] ]
+    ]
+},{
+    "result": "yk_tentacle_nagatekko_fur",
+    "__templates":["recipe_nagatekko"],
+
+    "difficulty": 4,
+    "time": 120000,
+    "tools": [
+	[["sewing_kit", 28] ]
+    ],
+    "components": [
+	[["fur", 44] ],
+	[["leather", 4] ]
+    ]
+},{
+    "result": "yk_tentacle_leggsocks_envguarder",
+    "__templates":["recipe_legginth_socks"],
+
+    "skills_required": ["fabrication", 6],
+    "difficulty": 7,
+    "time": 240000,
+    "qualities" : [
+	{"id":"CUT","level":1,"amount":1}
+    ],
+    "tools": [
+	[["welder", 24], ["soldering_iron", 24], ["toolset", 24] ],
+	[["sewing_kit", 120] ]
+    ],
+    "components": [
+	[["nomex", 24] ],
+	[["leather", 12] ],
+	[["superglue", 2] ],
+	[["plastic_chunk", 12] ]
+    ]
+},{
+    "result": "yk_tentacle_nagatekko_envguarder",
+    "__templates": ["recipe_nagatekko"],
+
+    "skills_required": ["fabrication", 6],
+    "difficulty": 7,
+    "time": 250000,
+    "qualities" : [
+	{"id":"CUT","level":1,"amount":1}
+    ],
+    "tools": [
+	[["welder", 28], ["soldering_iron", 28], ["toolset", 28] ],
+	[["sewing_kit", 140] ]
+    ],
+    "components": [
+	[["nomex", 28] ],
+	[["leather", 18] ],
+	[["superglue", 2] ],
+	[["plastic_chunk", 14] ]
+    ]
+}]

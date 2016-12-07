@@ -1,0 +1,8 @@
+{
+    "__templates": ["modinfo"],
+    "ident": "scenario_tentaculas",
+    "__name_en": "i am a demi-human",
+    "__name_ja": "追加 - 人に非ず",
+    "__description_ja": "人外スタートのシナリオを追加します。主にRPで使われることを目的としています。",
+    "category": "scenarios",
+}

@@ -1,0 +1,334 @@
+[{
+    "__templates": ["item"],
+    "id": "yk_witch_caldron",
+    "__name_en": "witch's caldron",
+    "__name_ja": "魔女の大釜",
+    "type": "TOOL",
+    "symbol": "(",
+    "color": "dark_gray",
+    "__description_ja": "魔女の大釜です。下準備がかかる代わりにまとめて混ぜるのが楽になります。魔術も錬金術も台所から！",
+    "price": 10000,
+    "material": "steel",
+    "weight": 10042,
+    "volume": 40,
+    "bashing": 36,
+    "to_hit": -25,
+    "ammo": "water",
+    "max_charges": 40,
+    "initial_charges": 0,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "qualities": [["COOK", 1], ["CHEM", 2]],
+    "revert_to": "null"
+},{ 
+    "__templates": ["recipe"],
+    "result": "yk_witch_caldron",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 180000,
+    "qualities":[
+	{"id":"HAMMER","level":1,"amount":1},
+	{"id":"DIG","level":1,"amount":1}
+    ],
+    "tools": [
+	[["crucible", -1], ["crucible_clay", -1] ],
+	[["forge", 100], ["char_forge", 20], ["oxy_torch", 20] ]
+    ],
+    "components": [
+	[["scrap", 96], ["steel_chunk", 32], ["steel_lump", 8] ]
+    ]
+},
+
+
+
+
+
+{
+    "//": "################################### chem recipes ###################################",
+    "__import": [{
+	"ref": {
+	    "type":"recipe",
+	    "result":"tallow_tainted",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "id_suffix": "yk_through_caldron",
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "components": [
+	[
+	    [ "fat_tainted", 4 ]
+	]
+    ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "lamp_oil",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "id_suffix": "yk_through_caldron",
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "components": [
+	[
+	    [ "tallow", 2 ],
+	    [ "tallow_tainted", 2 ],
+	    [ "lard", 2 ],
+	    [ "cooking_oil", 2 ]
+	]
+    ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "ammonia",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "id_suffix": "yk_through_caldron",
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "components": [
+	[
+	    [ "scrap", 1 ]
+	],
+	[
+	    [ "charcoal", 5 ],
+	    [ "coal_lump" 5 ],
+	    [ "lye_powder", 20 ]
+	]
+    ]
+},{
+    "//" : "specialized lye power これだけ元々batch_factorが付いてたので",
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "lye_powder",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "id_suffix": "yk_through_caldron",
+    "difficulty": "${obj.difficulty + 1}",
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "time": "${obj.time * 1.05}",
+    "batch_time_factors": [90, 1],
+    "components": [
+	[
+	    [ "charcoal", 50 ]
+	]
+    ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "bleach",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "id_suffix": "yk_through_caldron",
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", -1]] ],
+
+    "components": [
+	[
+	    [ "salt_water", 2 ],
+	    [ "saline", 10 ]
+	]
+    ]
+},
+
+
+
+
+
+{
+    "//": "################################### food recipes ###################################",
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "id_suffix": "yk_chem_through_caldron",
+    "components": [
+	[
+	    [ "lye_powder", 100 ],
+	    [ "bleach", 10 ]
+	]
+    ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "from_hickory"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "id_suffix": "yk_hickory_through_caldron",
+    "components": [ [[ "hickory_root", 10 ]] ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "from_mineral"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": 1,
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "id_suffix": "yk_mineral_through_caldron",
+    "components": [ [[ "material_rocksalt", 1 ]] ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "from_salt_water"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": 1,
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", -1]] ],
+
+    "id_suffix": "yk_salt_water_through_caldron",
+    "components": [ [[ "salt_water", 10 ], [ "saline", 50 ]] ]
+},
+
+
+
+
+
+{
+    "//": "################################### an expensive drink ###################################",
+    "__templates": ["item_drink"]
+    "id" : "yk_magnitude_drink",
+    "__name_en" : "magnitude dream",
+    "__name_ja" : "無限の夢",
+    "__description_ja" : "一口呑むだけで知識が増えたようなそんな気分になります。二口呑めばもっとたくさん欲しくなり、三口目にはもっともっともっと……",
+    "color" : "pink",
+    "container" : "bottle_glass",
+    "quench" : 13,
+    "nutrition" : 1,
+    "healthy" : 1,
+    "fun" : 36,
+    "spoils_in" : 0,
+    "addiction_type" : "alcohol",
+    "addiction_potential" : 47,
+    "stim" : -1,
+    "price" : 16900,
+    "tool" : "null",
+    "weight" : 36,
+    "volume" : 1,
+    "material" : ["alcohol", "water"],
+    "charges" : 13,
+    "flags": ["EATEN_COLD"],
+    "use_action" : "ALCOHOL"
+},{
+    "__templates": ["recipe"],
+    "result": "yk_magnitude_drink",
+    "byproducts": [ ["chem_ethanol" 1] ],
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRINKS",
+    "skill_used": "cooking",
+    "difficulty": 6,
+    "time": 30000,
+    "batch_time_factors": [70, 1],
+    "qualities": [
+	{"id":"COOK","level":2,"amount":1},
+	{"id":"CONTAIN","level":1,"amount":2}
+    ],
+    "tools": [
+	[
+	    [ "hotplate", 12 ], [ "char_smoker", 12 ], [ "toolset", 12 ], [ "fire", -1 ]
+	],
+	[["yk_witch_caldron", 1]]
+    ],
+    "components": [
+	[["beer", 2], ["hb_beer", 2] ],
+	[["european_pilsner",1]],
+	[["pale_ale", 1]],
+	[["india_pale_ale", 1]],
+	[["stout", 1]],
+	[["belgian_ale", 1]],
+	[["imperial_stout", 1]],
+	[["rootbeer", 1]],
+	[["whiskey", 2], ["single_malt_whiskey", 2]],
+	[["vodka", 2]],
+	[["rum", 2]],
+	[["tequila", 1]],
+	[["gin", 1 ]],
+	[["brandy", 1]],
+	[["triple_sec", 1]],
+	[["wine_riesling", 1]],
+	[["wine_chardonnay", 1]],
+	[["wine_cabernet", 1]],
+	[["wine_noir", 1]],
+	[["bum_wine", 2]], 
+	[["dandelion_wine", 1], ["pine_wine", 1]],
+	[["fruit_wine", 1]],
+	[["irish_coffee", 1], ["coffee_syrup", 1]],
+	[["drink_strawberry_surprise", 1]],
+	[["drink_boozeberry", 1]],
+	[["drink_screwdriver", 1]],
+	[["drink_wild_apple", 1]],
+	[["drink_rumcola", 1], ["long_island", 1]]
+    ]
+}]
