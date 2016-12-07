@@ -1,0 +1,132 @@
+[{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "__undefined"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "id_suffix": "yk_chem_through_caldron",
+    "components": [
+	[
+	    [ "lye_powder", 100 ],
+	    [ "bleach", 10 ]
+	]
+    ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "from_hickory"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "id_suffix": "yk_hickory_through_caldron",
+    "components": [ [[ "hickory_root", 10 ]] ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "from_mineral"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": 1,
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "id_suffix": "yk_mineral_through_caldron",
+    "components": [ [[ "material_rocksalt", 1 ]] ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "salt",
+	    "id_suffix": "from_salt_water"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": 1,
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", -1]] ],
+
+    "id_suffix": "yk_salt_water_through_caldron",
+    "components": [ [[ "salt_water", 10 ], [ "saline", 50 ]] ]
+},{
+
+
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sugar",
+	    "id_suffix": "from_beets"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 1],
+    "tools": [ [["yk_witch_caldron", 1]] ],
+
+    "id_suffix": "yk_beets_through_caldron",
+    "components": [ 
+	[[ "sugar_beet", 2 ]],
+	[[ "lye_powder", 20 ]],
+    ]
+},{
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sugar",
+	    "id_suffix": "from_wood"
+	}
+	"bind": "obj",
+	"import": "as template",
+	"ignore": ["components"],
+    }],
+    "difficulty": "${obj.difficulty + 1}",
+    "time": "${obj.time * 1.33}",
+    "batch_time_factors": [75, 5],
+    "tools": [ [["yk_witch_caldron", -1]] ],
+
+    "id_suffix": "yk_wood_through_caldron",
+    "components": [ 
+        [   ["pine_bough",6],
+            ["2x4",8],
+            ["stick",8],
+            ["splinter",16]
+        ],
+        [   ["water_acid_weak",3],
+            ["water_acid",2],
+            ["acid",1]
+        ]
+    ]
+},
+
+
+]

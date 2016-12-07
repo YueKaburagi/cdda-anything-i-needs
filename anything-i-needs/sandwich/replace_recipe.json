@@ -1,0 +1,191 @@
+[{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_cucumber",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_pbh",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_deluxe",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_cheese",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_dudeluxe",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_pb",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_jam",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_pbj",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_pbm",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_veggy",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_sauce",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "fish_sandwich",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "blt",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_honey",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_human",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "manwich",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_t",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__templates": ["override_sandwich_recipe"],
+    "__import": [{
+	"ref": {
+	    "type": "recipe",
+	    "result": "sandwich_cheese_grilled",
+	    "id_suffix": "__undefined"
+	}
+	"import": "as template",
+    }],
+},{
+    "__import": [{
+	"ref": {
+	    "id": "manwich",
+	    "comestible_type": "FOOD",
+	}
+	"import": "as template",
+    }],
+    "name": "サンドイッチ(レッドマン)",
+    "edit-mode": "modify",
+}]

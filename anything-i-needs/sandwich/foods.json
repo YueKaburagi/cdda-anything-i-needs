@@ -9,12 +9,12 @@
     "healthy" : 0,
     "nutrition" : 40,
     "__description_ja" : "お肉とソースでちょっと贅沢になったサンドイッチです",
-    "price" : 1100,
+    "price" : 1000,
     "material" : ["flesh", "wheat"],
     "tool" : "null",
     "volume" : 1,
     "charges" : 3,
-    "fun" : 4
+    "fun" : 4,
 },{
     "__templates": ["sandwich"],
     "__name_ja": "サンドイッチ(ミーベジソース)",
@@ -24,11 +24,11 @@
     "spoils_in": 42,
     "quench": 1,
     "healthy": 2,
-    "nutrition": 32,
+    "nutrition": 34,
     "charges": 5,
     "volume" : 1,
     "fun": 5,
-    "price": 1250,
+    "price": 1150,
     "material": ["flesh", "veggy", "wheat"],
 },{
     "__templates": ["sandwich"],
@@ -43,7 +43,7 @@
     "charges": 3,
     "volume": 1,
     "fun": 4,
-    "price": 1450,
+    "price": 950,
     "material": ["veggy", "wheat"],
 },
 

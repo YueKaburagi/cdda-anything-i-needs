@@ -127,6 +127,10 @@
 	"skill_used": "cooking",
 	"difficulty": 0,
     },
+    "override_sandwich_recipe": {
+	"edit-mode": "modify",
+	"subcategory": "CSC_FOOD_BREAD",
+    }
 
     
     "smoke_unit": {
