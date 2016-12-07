@@ -31,8 +31,8 @@ initial inventory: telescoping umbrella, pair of fit-over sunglasses
 電池で動く臼とそれを使って製粉するレシピを追加します  
 バランスはややぬるめ  
 
-###somoke_unit
-*もくもく燻製箱*
+###somoke_unit 
+*もくもく燻製箱*      
 燻製中に貼り付きたがる@さんを燻製器から引き剥がします    
 ボール箱の使い途の追加でもある   
 
